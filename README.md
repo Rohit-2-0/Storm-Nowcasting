@@ -77,12 +77,12 @@ xgb_model.fit(X_train_flat, y_train)
 ```
 📈 Evaluation Metrics
 
-    Accuracy – For overall performance comparison
+ Accuracy – For overall performance comparison
 
-    ROC AUC Score – To assess the model's ability to separate classes
+ ROC AUC Score – To assess the model's ability to separate classes
 
-    ROC Curves – Plotted for LSTM, Random Forest, and XGBoost
+ ROC Curves – Plotted for LSTM, Random Forest, and XGBoost
 
-    Probability outputs – From predict_proba or sigmoid activation
+ Probability outputs – From predict_proba or sigmoid activation
 
-    (Optional) Confusion Matrix, Precision, Recall for additional diagnostics
+ Confusion Matrix, Precision, Recall for additional diagnostics
