@@ -55,19 +55,26 @@ model.add(Dense(64, activation='relu'))
 model.add(Dense(1, activation='sigmoid'))
 
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
-
+```
 🌲 Random Forest Classifier
+
+Used as a traditional baseline model:
+
 from sklearn.ensemble import RandomForestClassifier
 
+```
 rf_model = RandomForestClassifier(n_estimators=100, random_state=42)
 rf_model.fit(X_train_flat, y_train)
-
+```
 ⚡ XGBoost Classifier
+
+A powerful gradient boosting model for tabular classification:
+```
 from xgboost import XGBClassifier
 
 xgb_model = XGBClassifier(use_label_encoder=False, eval_metric='logloss')
 xgb_model.fit(X_train_flat, y_train)
-
+```
 📈 Evaluation Metrics
 
     Accuracy – For overall performance comparison
